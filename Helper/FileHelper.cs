@@ -24,5 +24,23 @@ namespace ExemploPOO.Helper
                 }
 
 
+                 public void ListarArquivosDiretorios(string caminho){
+
+                       var retornoArquivos = Directory.GetFiles(caminho, "*2*", SearchOption.AllDirectories);
+
+                       foreach ( var retorno in retornoArquivos)
+                       {
+
+
+                                Console.WriteLine(retorno);
+
+
+
+                        
+                       }
+
+                }
+
+
     }
 }

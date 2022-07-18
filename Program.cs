@@ -91,11 +91,13 @@ namespace ExemploPOO {
 
                        //System.Console.WriteLine(calc.Somar(10,20));
 
-                       var caminho = "TrabalhandoComArquivos";
+                        var caminho = "TrabalhandoComArquivos";
                        
-                       FileHelper helper = new FileHelper();
+                        FileHelper helper = new FileHelper();
 
-                       helper.ListarDiretorios(caminho);
+                       //helper.ListarDiretorios(caminho);
+
+                        helper.ListarArquivosDiretorios(caminho);
 
 
 
