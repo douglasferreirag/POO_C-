@@ -49,6 +49,15 @@ namespace ExemploPOO.Helper
 
               }
 
+                public void ApagarDiretorio(string caminho, bool apagarArquivos){ //Deletou, já era. Não vai para lixeira.
+
+                     Directory.Delete(caminho, apagarArquivos);
+
+                    
+
+              }
+
+
 
 
 
