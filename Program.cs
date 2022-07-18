@@ -92,12 +92,18 @@ namespace ExemploPOO {
                        //System.Console.WriteLine(calc.Somar(10,20));
 
                         var caminho = "TrabalhandoComArquivos";
+
+                        var caminhoPathCombine = Path.Combine(caminho, "Pasta teste 3", "SubPastaTeste3");
                        
                         FileHelper helper = new FileHelper();
 
                        //helper.ListarDiretorios(caminho);
 
-                        helper.ListarArquivosDiretorios(caminho);
+                        //helper.ListarArquivosDiretorios(caminho);
+
+                        Console.WriteLine("Criando diretório: " + caminhoPathCombine);
+
+                        helper.CriarDiretorio(caminhoPathCombine);
 
 
 
