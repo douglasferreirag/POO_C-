@@ -1,5 +1,7 @@
 using System.IO;
 
+using System.Collections.Generic;
+
 namespace ExemploPOO.Helper
 {
     public class FileHelper
@@ -66,6 +68,28 @@ namespace ExemploPOO.Helper
                      
 
               }    
+
+              public void CriarArquivoTextoSteeam(String caminho, List<String>conteudo){
+
+                     using(var stream = File.CreateText(caminho)){
+
+                             foreach (var linha in conteudo)
+                            
+                            {
+
+                            
+                                          stream.WriteLine(linha);
+                                          
+
+                            }
+       
+
+                     }
+
+                    
+
+
+              }
 
 
 

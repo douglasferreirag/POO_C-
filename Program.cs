@@ -2,6 +2,7 @@
 using ExemploPOO.Interfaces;
 using ExemploPOO.Models;
 using ExemploPOO.Helper;
+using System.Collections.Generic;
 
 
 namespace ExemploPOO {
@@ -95,7 +96,11 @@ namespace ExemploPOO {
 
                        // var caminhoPathCombine = Path.Combine(caminho, "Pasta Teste 1");
 
-                       var caminhoArquivo = Path.Combine(caminho, "arquivo-teste.txt");
+                       var caminhoArquivo = Path.Combine(caminho, "arquivo-teste-stream.txt");
+
+                       var listaString = new List<String> {"Linha 1",
+                                                           "Linha 2",
+                                                           "Linha 3"};
                        
                         FileHelper helper = new FileHelper();
 
@@ -109,9 +114,9 @@ namespace ExemploPOO {
 
                         //helper.ApagarDiretorio(caminhoPathCombine, true);
 
-                        helper.CriarArquivoTexto(caminhoArquivo, "Olá! Teste de escrita de arquivo." );
+                        //helper.CriarArquivoTexto(caminhoArquivo, "Olá! Teste de escrita de arquivo." );
 
-
+                        helper.CriarArquivoTextoSteeam(caminhoArquivo, listaString);
 
                 }
 
