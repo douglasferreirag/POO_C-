@@ -93,7 +93,9 @@ namespace ExemploPOO {
 
                         var caminho = "C:\\TrabalhandoComArquivos";
 
-                        var caminhoPathCombine = Path.Combine(caminho, "Pasta Teste 1");
+                       // var caminhoPathCombine = Path.Combine(caminho, "Pasta Teste 1");
+
+                       var caminhoArquivo = Path.Combine(caminho, "arquivo-teste.txt");
                        
                         FileHelper helper = new FileHelper();
 
@@ -105,7 +107,9 @@ namespace ExemploPOO {
 
                        // helper.CriarDiretorio(caminhoPathCombine);
 
-                        helper.ApagarDiretorio(caminhoPathCombine, true);
+                        //helper.ApagarDiretorio(caminhoPathCombine, true);
+
+                        helper.CriarArquivoTexto(caminhoArquivo, "Olá! Teste de escrita de arquivo." );
 
 
 

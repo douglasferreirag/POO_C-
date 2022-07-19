@@ -49,13 +49,23 @@ namespace ExemploPOO.Helper
 
               }
 
-                public void ApagarDiretorio(string caminho, bool apagarArquivos){ //Deletou, já era. Não vai para lixeira.
+              public void ApagarDiretorio(string caminho, bool apagarArquivos){ //Deletou, já era. Não vai para lixeira.
 
                      Directory.Delete(caminho, apagarArquivos);
 
                     
 
-              }
+              }  
+
+              public void CriarArquivoTexto(String caminho, String conteudo){
+
+                     if (!File.Exists(caminho))
+
+                            File.WriteAllText(caminho,conteudo);
+
+                     
+
+              }    
 
 
 
