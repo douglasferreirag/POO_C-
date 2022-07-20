@@ -121,7 +121,36 @@ namespace ExemploPOO.Helper
 
               }
 
+              public void LerArquivo(string caminho){
 
+                     var conteudo = File.ReadAllLines(caminho);
+
+                     foreach (var linha in conteudo)
+                     {
+
+                            Console.WriteLine(linha);
+                            
+                     }
+
+              }
+
+              public void LerArquivoStream(string caminho){
+
+                     string linha = string.Empty;
+
+                     using(var stream = File.OpenText(caminho)){
+
+                            while ((linha = stream.ReadLine()) != null)
+                            {
+
+                                   Console.WriteLine(linha);
+                                   
+                            }
+       
+
+                     }
+
+              }
 
 
 

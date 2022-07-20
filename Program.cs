@@ -121,11 +121,13 @@ namespace ExemploPOO {
 
                         //helper.CriarArquivoTexto(caminhoArquivo, "Olá! Teste de escrita de arquivo." );
 
-                        helper.CriarArquivoTextoSteeam(caminhoArquivo, listaString);
+                       // helper.CriarArquivoTextoSteeam(caminhoArquivo, listaString);
 
-                        helper.AdicionarTextoSteeam(caminhoArquivo, listaStringContinuacao);
+                        //helper.AdicionarTextoSteeam(caminhoArquivo, listaStringContinuacao);
 
-                        
+                        helper.LerArquivoStream(caminhoArquivo);
+
+
 
                 }
 
