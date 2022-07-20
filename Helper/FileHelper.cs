@@ -176,7 +176,16 @@ namespace ExemploPOO.Helper
         
 
 
-
+              
+              public void DeletarArquivo(string caminho)
+        
+              {
+            
+                                
+                        File.Delete(caminho);
+                        
+        
+              }
 
 
 

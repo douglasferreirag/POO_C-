@@ -138,13 +138,17 @@ namespace ExemploPOO {
 
                       // helper.MoverArquivo(caminhoArquivo, novoCaminhoArquivo, false);
 
-                        helper.CopiarArquivo(caminhoArquivoTeste, caminhoArquivoTesteCopia, false );
+                       // helper.CopiarArquivo(caminhoArquivoTeste, caminhoArquivoTesteCopia, false );
 
+                        helper.DeletarArquivo(caminhoArquivoTesteCopia);
 
+                }  
 
-                }
+        }      
 
-        }
+                
+
+        
 
 }
 
