@@ -1,0 +1,7 @@
+Olá! Teste de escrita de arquivo0.
+
+Olá! Teste de escrita de arquivo1.
+
+Olá! Teste de escrita de arquivo2.
+
+Olá! Teste de escrita de arquivo3.
