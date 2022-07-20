@@ -101,6 +101,11 @@ namespace ExemploPOO {
                        var listaString = new List<String> {"Linha 1",
                                                            "Linha 2",
                                                            "Linha 3"};
+
+                        
+                        var listaStringContinuacao = new List<String> {"Linha 4",
+                                                           "Linha 5",
+                                                           "Linha 6"};
                        
                         FileHelper helper = new FileHelper();
 
@@ -117,6 +122,10 @@ namespace ExemploPOO {
                         //helper.CriarArquivoTexto(caminhoArquivo, "Olá! Teste de escrita de arquivo." );
 
                         helper.CriarArquivoTextoSteeam(caminhoArquivo, listaString);
+
+                        helper.AdicionarTextoSteeam(caminhoArquivo, listaStringContinuacao);
+
+                        
 
                 }
 

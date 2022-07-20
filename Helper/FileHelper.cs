@@ -91,6 +91,36 @@ namespace ExemploPOO.Helper
 
               }
 
+              public void AdicionarTexto(String caminho, String conteudo){
+
+                     File.AppendAllText(caminho,conteudo);
+
+
+
+              }
+
+               public void AdicionarTextoSteeam(String caminho, List<String>conteudo){
+
+                     using(var stream = File.AppendText(caminho)){
+
+                             foreach (var linha in conteudo)
+                            
+                            {
+
+                            
+                                          stream.WriteLine(linha);
+                                          
+
+                            }
+       
+
+                     }
+
+                    
+
+
+              }
+
 
 
 
