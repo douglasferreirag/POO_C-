@@ -98,6 +98,9 @@ namespace ExemploPOO {
 
                        var caminhoArquivo = Path.Combine(caminho, "arquivo-teste-stream.txt");
 
+                       var novoCaminhoArquivo = Path.Combine(caminho, "Pasta Teste 2" , "arquivo-teste-stream.txt");
+
+
                        var listaString = new List<String> {"Linha 1",
                                                            "Linha 2",
                                                            "Linha 3"};
@@ -106,6 +109,8 @@ namespace ExemploPOO {
                         var listaStringContinuacao = new List<String> {"Linha 4",
                                                            "Linha 5",
                                                            "Linha 6"};
+
+
                        
                         FileHelper helper = new FileHelper();
 
@@ -125,7 +130,9 @@ namespace ExemploPOO {
 
                         //helper.AdicionarTextoSteeam(caminhoArquivo, listaStringContinuacao);
 
-                        helper.LerArquivoStream(caminhoArquivo);
+                       // helper.LerArquivoStream(caminhoArquivo);
+
+                       helper.MoverArquivo(caminhoArquivo, novoCaminhoArquivo);
 
 
 
