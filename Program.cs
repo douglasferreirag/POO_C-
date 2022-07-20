@@ -98,6 +98,10 @@ namespace ExemploPOO {
 
                        var caminhoArquivo = Path.Combine(caminho, "arquivo-teste-stream.txt");
 
+                       var caminhoArquivoTeste = Path.Combine(caminho, "arquivo-teste.txt");
+
+                       var caminhoArquivoTesteCopia = Path.Combine(caminho, "arquivo-teste-bpk.txt");
+
                        var novoCaminhoArquivo = Path.Combine(caminho, "Pasta Teste 2" , "arquivo-teste-stream.txt");
 
 
@@ -132,7 +136,9 @@ namespace ExemploPOO {
 
                        // helper.LerArquivoStream(caminhoArquivo);
 
-                       helper.MoverArquivo(caminhoArquivo, novoCaminhoArquivo);
+                      // helper.MoverArquivo(caminhoArquivo, novoCaminhoArquivo, false);
+
+                        helper.CopiarArquivo(caminhoArquivoTeste, caminhoArquivoTesteCopia, false );
 
 
 
